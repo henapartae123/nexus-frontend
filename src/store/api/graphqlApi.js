@@ -3,8 +3,8 @@ import { graphqlRequestBaseQuery } from "@rtk-query/graphql-request-base-query";
 import { GraphQLClient } from "graphql-request";
 
 const API_URL =
-  import.meta.env.REACT_APP_GRAPHQL_URL || "http://localhost:8000/graphql/";
-// process.env.REACT_APP_GRAPHQL_URL || 'http://localhost:8000/graphql/';
+  // import.meta.env.REACT_APP_GRAPHQL_URL;
+process.env.REACT_APP_GRAPHQL_URL;
 
 // Create GraphQL client
 const client = new GraphQLClient(API_URL);
